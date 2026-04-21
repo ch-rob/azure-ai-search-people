@@ -1,0 +1,10 @@
+{
+    "search": "Chen Michael",
+    "count": true,
+    "select": "DisplayName",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}

@@ -1,0 +1,59 @@
+# Azure AI Search
+*.log
+*.tmp
+
+# PowerShell
+*.ps1xml
+*.psd1
+
+# Azure credentials
+*.publishsettings
+*.azureProfile
+.azure/
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Python (if any)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Temporary files
+*.bak
+*.old
+*.new
+temp/
+tmp/
+
+# Secrets and keys
+secrets.json
+appsettings.local.json
+local.settings.json
+.env
+.env.local
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

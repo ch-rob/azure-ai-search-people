@@ -1,0 +1,678 @@
+{
+  "@odata.etag": "\"0x8DE9F129D6119F6\"",
+  "name": "worker-index",
+  "defaultScoringProfile": "boostFirstName",
+  "purviewEnabled": false,
+  "fields": [
+    {
+      "name": "WorkerId",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": false,
+      "key": true,
+      "synonymMaps": []
+    },
+    {
+      "name": "FirstName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "LastName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "DisplayName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Picture",
+      "type": "Edm.String",
+      "searchable": false,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Manager",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Department",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Title",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "WorkEmail",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Office",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "LocationDescription",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "LocationCode",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "BuildingNr",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Floor",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Room",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "CostCenterDescription",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "CostCenterCode",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "LegalEntityDescription",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "LegalEntityCode",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "MnetLastHireDate",
+      "type": "Edm.DateTimeOffset",
+      "searchable": false,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "MnetWorkPhone",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "MnetWorkerType",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "MnetPronouns",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "MnetSpaceID",
+      "type": "Edm.String",
+      "searchable": false,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Time_zone",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "UserPrincipalName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "ProductDescription",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "ProductCode",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "MnetSearchLocation",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Skills",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "PastProjects",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Interests",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Content",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Country",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Level",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Function",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "WorkerType",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Company",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "Location",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "DirectReports",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "ExtendedManagers",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": []
+    },
+    {
+      "name": "contentVector",
+      "type": "Collection(Edm.Single)",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "stored": true,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "dimensions": 1536,
+      "vectorSearchProfile": "myHnswProfile",
+      "synonymMaps": []
+    },
+    {
+      "name": "AccountName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene",
+      "synonymMaps": []
+    },
+    {
+      "name": "SearchableContent",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene",
+      "synonymMaps": []
+    },
+    {
+      "name": "SearchableContentVector",
+      "type": "Collection(Edm.Single)",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": false,
+      "stored": true,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "dimensions": 1536,
+      "vectorSearchProfile": "myHnswProfile",
+      "synonymMaps": []
+    },
+    {
+      "name": "MnetNameVariants",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "stored": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene",
+      "synonymMaps": []
+    }
+  ],
+  "scoringProfiles": [
+    {
+      "name": "boostFirstName",
+      "functionAggregation": "sum",
+      "text": {
+        "weights": {
+          "DisplayName": 5,
+          "FirstName": 4,
+          "LastName": 3
+        }
+      },
+      "functions": []
+    }
+  ],
+  "suggesters": [],
+  "analyzers": [],
+  "normalizers": [],
+  "tokenizers": [],
+  "tokenFilters": [],
+  "charFilters": [],
+  "similarity": {
+    "@odata.type": "#Microsoft.Azure.Search.BM25Similarity"
+  },
+  "semantic": {
+    "configurations": [
+      {
+        "name": "people-semantic",
+        "flightingOptIn": false,
+        "rankingOrder": "BoostedRerankerScore",
+        "prioritizedFields": {
+          "titleField": {
+            "fieldName": "DisplayName"
+          },
+          "prioritizedContentFields": [
+            {
+              "fieldName": "DisplayName"
+            },
+            {
+              "fieldName": "FirstName"
+            },
+            {
+              "fieldName": "LastName"
+            },
+            {
+              "fieldName": "Department"
+            },
+            {
+              "fieldName": "WorkEmail"
+            },
+            {
+              "fieldName": "Location"
+            },
+            {
+              "fieldName": "Function"
+            },
+            {
+              "fieldName": "Title"
+            }
+          ],
+          "prioritizedKeywordsFields": [
+            {
+              "fieldName": "DisplayName"
+            },
+            {
+              "fieldName": "FirstName"
+            },
+            {
+              "fieldName": "LastName"
+            },
+            {
+              "fieldName": "Department"
+            },
+            {
+              "fieldName": "WorkEmail"
+            },
+            {
+              "fieldName": "Location"
+            },
+            {
+              "fieldName": "Function"
+            },
+            {
+              "fieldName": "Title"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "vectorSearch": {
+    "algorithms": [
+      {
+        "name": "myHnsw",
+        "kind": "hnsw",
+        "hnswParameters": {
+          "metric": "cosine",
+          "m": 4,
+          "efConstruction": 400,
+          "efSearch": 500
+        }
+      }
+    ],
+    "profiles": [
+      {
+        "name": "myHnswProfile",
+        "algorithm": "myHnsw"
+      }
+    ],
+    "vectorizers": [],
+    "compressions": []
+  }
+}
