@@ -8,3 +8,79 @@
     "top": 10,
     "skip": 0
 }
+
+{
+    "search": "Title: Engineer",
+    "count": true,
+    "select": "DisplayName, FirstName, LastName, Title",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}
+
+// Interesting results (see last result: "Steve Harris, has Robert Johnson as a manager")...
+{
+    "search": "David Johnson",
+    "count": true,
+    "select": "DisplayName, FirstName, LastName, Title",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}
+
+// Excludes Steve Harris since Manager isn't used...
+{
+    "search": "David Johnson",
+    "count": true,
+    "select": "DisplayName, FirstName, LastName, Title, Manager",
+    "searchFields": "DisplayName, FirstName, LastName",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}
+
+// Substring example...
+{
+    "search": "dav*",
+    "count": true,
+    "select": "DisplayName, FirstName, LastName, Title",
+    "queryType": "full",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}
+
+{
+    "search": "Engineering in Atlanta",
+    "count": true,
+    "select": "DisplayName, FirstName, LastName, Title, Location, Department",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}
+
+// Get additional debugging info
+{
+    "search": "EMP065",
+    "count": true,
+    "select": "DisplayName, FirstName, LastName, Title, Location, Department",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "answers": "extractive|count-3",
+    "captions": "extractive|highlight-true",    
+    "debug": "semantic",
+    "top": 10,
+    "skip": 0
+}
+
+
