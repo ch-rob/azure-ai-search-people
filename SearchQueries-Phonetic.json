@@ -1,0 +1,38 @@
+// Will find Abigail Scott
+{
+    "search": "Gale Sctt",
+    "count": true,
+    "searchFields": "FirstName_phonetic, LastName_phonetic, DisplayName",
+    "select": "FirstName, LastName, DisplayName",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}
+
+// Will find people with the last name Johnson
+{
+    "search": "Johnsen",
+    "count": true,
+    "searchFields": "FirstName_phonetic, LastName_phonetic, DisplayName",
+    "select": "FirstName, LastName, DisplayName",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}
+
+// Will find Robert Johnson
+{
+    "search": "Bob Johnsen",
+    "count": true,
+    "searchFields": "FirstName_phonetic, LastName_phonetic, DisplayName",
+    "select": "FirstName, LastName, DisplayName",
+    "queryType": "semantic",
+    "semanticConfiguration": "people-semantic",
+    "scoringProfile": "boostFirstName",
+    "top": 10,
+    "skip": 0
+}

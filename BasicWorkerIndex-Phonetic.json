@@ -1,0 +1,283 @@
+{
+  "name": "worker-index",
+  "defaultScoringProfile": "boostFirstName",
+  "fields": [
+    {
+      "name": "WorkerId",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": false,
+      "key": true
+    },
+    {
+      "name": "FirstName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": ["name-nicknames"]
+    },
+    {
+      "name": "FirstName_phonetic",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": false,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "analyzer": "phonetic_analyzer"
+    },
+    {
+      "name": "LastName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "synonymMaps": ["name-nicknames"]
+    },
+    {
+      "name": "LastName_phonetic",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": false,
+      "sortable": false,
+      "facetable": false,
+      "key": false,
+      "analyzer": "phonetic_analyzer"
+    },
+    {
+      "name": "DisplayName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Manager",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Department",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Title",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "WorkEmail",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Office",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "UserPrincipalName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "AccountName",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false,
+      "analyzer": "standard.lucene"
+    },
+    {
+      "name": "Skills",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Interests",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": false,
+      "retrievable": true,
+      "sortable": false,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Country",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Level",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Function",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "WorkerType",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Company",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Location",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    },
+    {
+      "name": "Time_zone",
+      "type": "Edm.String",
+      "searchable": true,
+      "filterable": true,
+      "retrievable": true,
+      "sortable": true,
+      "facetable": true,
+      "key": false
+    }
+  ],
+  "scoringProfiles": [
+    {
+      "name": "boostFirstName",
+      "functionAggregation": "sum",
+      "text": {
+        "weights": {
+          "DisplayName": 5,
+          "FirstName": 4,
+          "LastName": 3,
+          "FirstName_phonetic": 2,
+          "LastName_phonetic": 2
+        }
+      },
+      "functions": []
+    }
+  ],
+  "suggesters": [
+    {
+      "name": "employee-suggester",
+      "searchMode": "analyzingInfixMatching",
+      "sourceFields": [
+        "DisplayName",
+        "FirstName",
+        "LastName",
+        "Title",
+        "Department"
+      ]
+    }
+  ],
+  "analyzers": [
+    {
+      "name": "phonetic_analyzer",
+      "@odata.type": "#Microsoft.Azure.Search.CustomAnalyzer",
+      "tokenizer": "standard_v2",
+      "tokenFilters": [
+        "lowercase",
+        "phonetic_filter"
+      ]
+    }
+  ],
+  "tokenFilters": [
+    {
+      "name": "phonetic_filter",
+      "@odata.type": "#Microsoft.Azure.Search.PhoneticTokenFilter",
+      "encoder": "doubleMetaphone"
+    }
+  ],
+  "corsOptions": {
+    "allowedOrigins": [
+      "*"
+    ]
+  }
+}
